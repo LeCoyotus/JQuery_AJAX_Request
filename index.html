@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Exercice Jquery</title>
+</head>
+<body>
+
+    <!-- Container du carousel -->
+    <div class="carousel-container">
+
+        <!-- Images du carousel -->
+        <div class="Slides anim-slider">
+            <div class="numeroimage">1 / 4</div>
+            <img src="./img/Witcher3Ultra.png" style="width:100%">
+            <div class="texte">Witcher 3 PC Ultra</div>
+        </div>
+
+        <div class="Slides anim-slider">
+            <div class="numeroimage">2 / 4</div>
+            <img src="./img/Witcher3Medium.png" style="width:100%">
+            <div class="texte">Witcher 3 PC Medium</div>
+        </div>
+
+        <div class="Slides anim-slider">
+            <div class="numeroimage">3 / 4</div>
+            <img src="./img/Witcher3Low.png" style="width:100%">
+            <div class="texte">Witcher 3 PC Low</div>
+        </div>
+
+        <div class="Slides anim-slider">
+            <div class="numeroimage">4 / 4</div>
+            <img src="./img/Witcher3Switch.png" style="width:100%">
+            <div class="texte">Witcher 3 Switch</div>
+        </div>
+
+        <!-- Boutons suivants et précédents -->
+        <a class="precedent" onclick="naviguerSlide(-1)">&#10094;</a>
+        <a class="suivant" onclick="naviguerSlide(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- Les boutons/cercles de naviguation -->
+    <div class="boutons">
+        <span class="point" onclick="currentSlide(1)"></span>
+        <span class="point" onclick="currentSlide(2)"></span>
+        <span class="point" onclick="currentSlide(3)"></span>
+        <span class="point" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div class="main">
+        <div class="nav">
+            <ul>
+                <li><a href="#contenu" id="lien1">Lien 1</a></li>
+                <li><a href="#contenu" id="lien2">Lien 2</a></li>
+                <li><a href="#contenu" id="lien3">Lien 3</a></li>
+                <li><a href="#contenu" id="rech">Rech</a></li>
+            </ul>
+        </div>
+    
+        <div id="contenu">
+    
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- 1 - eval(json)
+2 - retourner un tableau[objet]
+3 - via une boucle for récuperer les donnée et les structurer avec mise en forme via jquery -->
